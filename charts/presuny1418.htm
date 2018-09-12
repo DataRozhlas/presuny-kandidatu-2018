@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Highcharts Example</title>
+
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+
+<wide><div style="width: 1000px; height:600px;" id="presuny1418"></div></wide>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="https://code.highcharts.com/modules/sankey.js"></script>
+
+<script type="text/javascript">
+
+Highcharts.chart('presuny1418', {
+
+    title: {
+        text: 'Přesuny kandidátů 2014/2018'
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    tooltip: {
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    credits: {
+        href: '',
+        text: ''
+    },
+
+    plotOptions: {
+        series: {
+            linkOpacity: 0.2
+        }
+    },
+
+    series: [{
+        keys: ['from', 'to', 'weight'],
+        data: [
+
+  ["ČSSD","KDU-ČSL ",86],
+  ["KSČM","KDU-ČSL ",88],
+  ["ODS","KDU-ČSL ",52],
+  ["TOP 09","KDU-ČSL ",62],
+  ["ANO","KDU-ČSL ",54],
+  ["KDU-ČSL","ČSSD ",103],
+  ["KSČM","ČSSD ",183],
+  ["ODS","ČSSD ",56],
+  ["KDU-ČSL","KSČM ",56],
+  ["ČSSD","KSČM ",185],
+  ["ČSSD","ODS ",60],
+  ["TOP 09","ODS ",111],
+  ["KDU-ČSL","STAN ",88],
+  ["ČSSD","STAN ",86],
+  ["ODS","STAN ",50],
+  ["SNK ED","STAN ",76],
+  ["TOP 09","STAN ",104],
+  ["ANO","STAN ",55],
+  ["SZ","Piráti ",72],
+  ["ČSSD","ANO ",65],
+  ["Úsvit","SPD ",120]
+
+],
+        nodes: [
+  {id: 'KDU-ČSL', color: '#FFC900'},
+  {id: 'KDU-ČSL ', color: '#FFC900'},
+  {id: 'KSČM', color: '#FF0000'},
+  {id: 'KSČM ', color: '#FF0000'},
+  {id: 'ČSSD', color: '#FF8E00'},
+  {id: 'ČSSD ', color: '#FF8E00'},
+  {id: 'ODS', color: '#0065AB'},
+  {id: 'ODS ', color: '#0065AB'},
+  {id: 'ANO', color: '#2B2C5F'},
+  {id: 'ANO ', color: '#2B2C5F'},
+  {id: 'TOP 09', color: '#755B7B'},
+  {id: 'TOP 09 ', color: '#755B7B'},
+  {id: 'SZ', color: '#008023'},
+  {id: 'Úsvit', color: '#FF0000'},
+  {id: 'SNK ED', color: '#FFC700'},
+  {id: 'STAN ', color: '#00C9F1'},
+  {id: 'Piráti ', color: '#000000'},
+  {id: 'SPD ', color: '#FF0000'}
+
+],
+        type: 'sankey',
+        name: 'Počet kandidátů, kteří změnili stranu'
+    }]
+
+});
+
+		</script>
+	</body>
+</html>
